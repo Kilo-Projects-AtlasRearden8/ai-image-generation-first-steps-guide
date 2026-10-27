@@ -1,0 +1,36 @@
+/* AI Image Generation First Steps Guide - simple, warm, polished styles */
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #222; margin: 0; background: #fafafa; }
+.wrapper { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+header.site-header { background: #ffffff; border-bottom: 1px solid #ddd; padding: 24px 0; margin-bottom: 16px; }
+.site-title { font-size: 1.5rem; margin: 0 0 6px 0; }
+.site-title a { color: #1a3c6a; text-decoration: none; }
+.site-title a:hover { text-decoration: underline; }
+.site-subtitle { margin: 0; color: #555; font-size: 1rem; }
+.top-nav { background: #eef2f7; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+.top-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.top-nav li { margin: 0; }
+.top-nav a { display: block; padding: 8px 12px; color: #1a3c6a; text-decoration: none; border-radius: 6px; }
+.top-nav a:hover { background: #dde6f0; }
+.top-nav a.active { background: #1a3c6a; color: #ffffff; }
+main { background: #ffffff; border: 1px solid #ddd; border-radius: 8px; padding: 24px 32px; }
+h1 { font-size: 1.75rem; margin-top: 0; border-bottom: 2px solid #1a3c6a; padding-bottom: 8px; }
+h2 { font-size: 1.35rem; margin-top: 24px; color: #1a3c6a; }
+h3 { font-size: 1.15rem; color: #1a3c6a; }
+h4, h5, h6 { font-size: 1.05rem; color: #333; }
+p { margin: 10px 0; }
+a { color: #1a5fb4; }
+a:hover { text-decoration: underline; }
+ul, ol { margin: 10px 0 10px 24px; }
+li { margin: 6px 0; }
+blockquote { border-left: 4px solid #1a3c6a; margin: 16px 0; padding: 8px 16px; background: #f4f7fb; font-style: italic; }
+pre { background: #f5f5f5; border: 1px solid #ddd; border-radius: 6px; padding: 12px 16px; overflow-x: auto; }
+code { background: #eee; padding: 2px 6px; border-radius: 4px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+pre code { background: transparent; padding: 0; font-size: 0.9rem; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
+th { background: #eef2f7; }
+hr { border: none; border-top: 1px solid #ddd; margin: 24px 0; }
+footer.site-footer { margin-top: 32px; padding: 24px 0; color: #666; font-size: 0.9rem; border-top: 1px solid #ddd; }
+footer.site-footer p { margin: 4px 0; }
+@media (max-width: 600px) { main { padding: 16px; } .top-nav ul { flex-direction: column; align-items: flex-start; } }

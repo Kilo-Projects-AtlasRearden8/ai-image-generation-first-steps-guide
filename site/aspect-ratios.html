@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aspect ratios — AI Image Generation First Steps Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <h1 class="site-title"><a href="index.html">AI Image Generation First Steps Guide</a></h1>
+      <p class="site-subtitle">Making AI images for free: models, prompts, aspect ratios, and more</p>
+    </div>
+  </header>
+<nav class="top-nav">
+  <ul>
+    <li><a href="index.html">Welcome</a></li>
+    <li><a href="choosing-models.html">Choosing models</a></li>
+    <li><a href="writing-prompts.html">Writing prompts</a></li>
+    <li><a href="aspect-ratios.html" class="active">Aspect ratios</a></li>
+    <li><a href="local-vs-cloud.html">Local vs cloud</a></li>
+    <li><a href="copyright-basics.html">Copyright basics</a></li>
+    <li><a href="safety-filters.html">Safety filters</a></li>
+    <li><a href="prompt-checklist.html">Prompt checklist</a></li>
+  </ul>
+</nav>
+  <main class="wrapper">
+<h1>Aspect ratios</h1>
+<p>Aspect ratio is the shape of your image — how wide it is compared to how tall it is. It is written as two numbers, like 1:1 (square) or 16:9 (wide).</p>
+<p>Picking the right shape before you generate saves you from cropping later.</p>
+<h2>Common aspect ratios</h2>
+<table>
+  <tr><th>Ratio</th><th>Shape</th><th>Best for</th></tr>
+  <tr><td>1:1</td><td>Square</td><td>Social media posts, profile pictures, testing prompts</td></tr>
+  <tr><td>3:2</td><td>Slightly wide</td><td>Photographs, prints</td></tr>
+  <tr><td>4:3</td><td>Classic photo</td><td>Slideshows, older screens</td></tr>
+  <tr><td>16:9</td><td>Wide</td><td>YouTube thumbnails, desktop wallpapers, cinematic scenes</td></tr>
+  <tr><td>9:16</td><td>Tall</td><td>Phone wallpapers, TikTok, Reels, Stories</td></tr>
+  <tr><td>2:3</td><td>Tall</td><td>Portrait posters, phone screens</td></tr>
+  <tr><td>21:9</td><td>Ultrawide</td><td>Sweeping landscapes, panoramas</td></tr>
+</table>
+<h2>How to set it</h2>
+<p>Most web tools have a dropdown or buttons labeled "Aspect ratio," "Size," or "Shape." Pick one before you hit generate.</p>
+<p>Some tools only offer square images on the free plan. If you need a different shape, you can crop the image afterward using your phone's photo editor or a free online crop tool.</p>
+<h2>Local tools</h2>
+<p>If you run Stable Diffusion, Fooocus, or ComfyUI on your own computer, you set the width and height in pixels instead of a ratio. Common sizes:</p>
+<ul>
+  <li>512 × 512 (square, 1:1)</li>
+  <li>768 × 768 (square, higher detail)</li>
+  <li>1024 × 1024 (square, high detail)</li>
+  <li>1024 × 576 (wide, 16:9)</li>
+  <li>576 × 1024 (tall, 9:16)</li>
+</ul>
+<p>Larger images take longer to generate and use more of your computer's memory. Start with 512 × 512 or 1024 × 1024.</p>
+<h2>A quick rule of thumb</h2>
+<ul>
+  <li>Posting to Instagram or Facebook? Use 1:1.</li>
+  <li>Making a phone wallpaper? Use 9:16.</li>
+  <li>Making a YouTube thumbnail? Use 16:9.</li>
+  <li>Just testing a prompt? Use 1:1 — it is the fastest and most common option.</li>
+</ul>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p>Written by Dylan Asdale of Asdale Dynamics, LLC.</p>
+      <p>Copyright (c) 2026 Asdale Dynamics, LLC. This guide is open source under the MIT License.</p>
+    </div>
+  </footer>
+</body>
+</html>
