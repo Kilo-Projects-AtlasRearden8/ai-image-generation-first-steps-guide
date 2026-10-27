@@ -34,3 +34,14 @@ hr { border: none; border-top: 1px solid #ddd; margin: 24px 0; }
 footer.site-footer { margin-top: 32px; padding: 24px 0; color: #666; font-size: 0.9rem; border-top: 1px solid #ddd; }
 footer.site-footer p { margin: 4px 0; }
 @media (max-width: 600px) { main { padding: 16px; } .top-nav ul { flex-direction: column; align-items: flex-start; } }
+@media print {
+  body { background: #ffffff; color: #000000; }
+  header.site-header, .top-nav, footer.site-footer { display: none; }
+  main { border: none; padding: 0; box-shadow: none; }
+  .wrapper { max-width: 100%; padding: 0; }
+  a { color: #000000; text-decoration: none; }
+  a::after { content: ' (' attr(href) ')'; font-size: 0.8rem; }
+  code, pre { background: #ffffff; color: #000000; border: 1px solid #999999; }
+  table, th, td { border: 1px solid #000000; }
+  h1, h2, h3 { color: #000000; page-break-after: avoid; }
+}

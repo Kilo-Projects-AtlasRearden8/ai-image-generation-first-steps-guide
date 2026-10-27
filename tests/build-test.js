@@ -45,6 +45,10 @@ EXPECTED_PAGES.forEach(function (page) {
 // 3. style.css exists
 check("site contains style.css", fs.existsSync(path.join(SITE_DIR, "style.css")));
 
+// 4. Print styles exist for the printable checklist
+let css = read("style.css");
+check("style.css has print media query", css.includes("@media print"));
+
 // 4. Content spot checks
 let index = read("index.html");
 check("index has site title", index.includes("AI Image Generation First Steps Guide"));
@@ -71,6 +75,14 @@ check("copyright page mentions U.S. Copyright Office", read("copyright-basics.ht
 check("safety filters page mentions false positive", read("safety-filters.html").includes("false positive"));
 check("checklist page has master checklist", read("prompt-checklist.html").includes("Master checklist"));
 check("checklist page is printable checklist", read("prompt-checklist.html").includes("Print this page"));
+check("checklist page has checkboxes", read("prompt-checklist.html").includes("[ ]"));
+
+// 7. Each page has substantive content (not empty)
+EXPECTED_PAGES.forEach(function (page) {
+  let html = read(page);
+  let textLength = html.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim().length;
+  check(page + " has substantive content (> 300 chars)", textLength > 300);
+});
 
 if (failures > 0) {
   console.error("\n" + failures + " test(s) failed.");

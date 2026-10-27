@@ -18,6 +18,16 @@ This manual walks you through making AI images for free, step by step, in plain 
 
 ## How to use this manual
 
+If you have never made an AI image before, work through these pages in order:
+
+1. [Choosing models](choosing-models.md) — pick a free tool to start with
+2. [Writing prompts](writing-prompts.md) — describe what you want to draw
+3. [Aspect ratios](aspect-ratios.md) — pick the right shape for your image
+4. Make your first image in your chosen tool
+5. [Prompt checklist](prompt-checklist.md) — print this and use it every time
+
+Then read [Local vs cloud](local-vs-cloud.md), [Copyright basics](copyright-basics.md), and [Safety filters](safety-filters.md) whenever you want to go deeper.
+
 Read it in order, or jump to the page you need right now. Every page keeps things simple. If a word feels unfamiliar, look it up in context — there is no test at the end.
 
 You can read this manual as Markdown files in `docs/`, or as a finished website in `site/`. The website is built from the Markdown files with `npm run build`, so you never need to edit `site/` by hand.

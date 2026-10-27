@@ -11,7 +11,13 @@ Topics covered:
 - Local vs cloud — privacy, limits, speed, cost comparison
 - Copyright basics — U.S. Copyright Office position, tool terms of service, respectful use
 - Safety filters — why they exist, what gets blocked, false positives, rephrasing
-- Prompt checklist — printable before/generate/after/master checklist
+- Prompt checklist — printable before/generate/after/master checklist with print-friendly CSS
+
+Additional features:
+- "Start here" guided reading path on the welcome page
+- Print styles (`@media print`) so the checklist prints cleanly without nav/header/footer
+- Dependency-free static site builder (`build.js`) with no external packages
+- MIT LICENSE with the exact copyright line
 
 ## How to run it
 
@@ -21,17 +27,17 @@ Requires Node.js.
 cd /workspace/kilo-lab/ai-image-generation-first-steps-guide
 npm install      # optional; no production dependencies are used
 npm run build    # reads docs/ Markdown, writes static HTML to site/
-npm test         # verifies build output (36 checks)
+npm test         # verifies build output
 npm run lint     # syntax-checks build.js and tests/build-test.js
 ```
 
-Open `site/index.html` in a browser to read the guide. `site/` is generated output — do not edit it by hand.
+Open `site/index.html` in a browser to read the guide. To print the checklist, open `site/prompt-checklist.html` and choose File > Print; print styles hide the nav, header, and footer. `site/` is generated output — do not edit it by hand.
 
 ## Verification results
 
 - `npm run build`: built all 8 pages plus style.css
 - `npm run lint`: no syntax errors
-- `npm test`: all 36 checks passed (page existence, credit/copyright footer on every page, no dangling `.md` links, nav present, content spot checks)
+- `npm test`: all 43 checks passed (page existence, print media query, credit/copyright footer on every page, no dangling `.md` links, nav present, checklist checkboxes, substantive content on every page, content spot checks)
 - No build errors, no test failures
 
 ## Known gaps
